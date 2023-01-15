@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Overpass-SemiBold.ttf">
+            <string>Overpass-SemiBold</string>
+        </array>
+        <array key="Overpass-VariableFont_wght.ttf">
+            <string>Overpass-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="DairlyWeatherTVC" customModule="Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dKU-ej-akd">
+                        <rect key="frame" x="10" y="10" width="300" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023-01-10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d11-Fv-vQb">
+                                <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="44"/>
+                                <fontDescription key="fontDescription" name="Overpass-SemiBold" family="Overpass" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-2" height="2"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L68-pH-5sF">
+                                <rect key="frame" x="128" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L68-pH-5sF" secondAttribute="height" id="QL6-tJ-qdn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJy-wY-gl1">
+                                <rect key="frame" x="200.33333333333334" y="0.0" width="99.666666666666657" height="44"/>
+                                <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-2" height="2"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="d11-Fv-vQb" firstAttribute="width" secondItem="dJy-wY-gl1" secondAttribute="width" id="qJ1-KX-0RT"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="dKU-ej-akd" secondAttribute="bottom" constant="10" id="8OX-Bw-KjD"/>
+                    <constraint firstItem="dKU-ej-akd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9Xo-aW-vK0"/>
+                    <constraint firstAttribute="trailing" secondItem="dKU-ej-akd" secondAttribute="trailing" constant="10" id="ob6-NB-Epn"/>
+                    <constraint firstItem="dKU-ej-akd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="zNt-z7-R2Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="138.93129770992365" y="26.760563380281692"/>
+        </tableViewCell>
+    </objects>
+</document>

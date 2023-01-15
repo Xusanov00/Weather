@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.6.4)
+  - lottie-ios (3.5.0)
+  - SnapKit (5.6.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - lottie-ios
+  - SnapKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - lottie-ios
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: f00f365081a34f971d95b31142d1be43fba63901
+
+COCOAPODS: 1.11.3
